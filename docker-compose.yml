@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: fuegoaustral
+    volumes:
+      - .:/var/www/html/wp-content/themes/FuegoAustral
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: fuegoaustral
