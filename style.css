@@ -449,7 +449,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: #F9F4E9;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif
 	/* Fallback for when there is no custom background color defined. */
 }
@@ -658,6 +658,7 @@ a:hover, a:active {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: bold;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .main-navigation a {
