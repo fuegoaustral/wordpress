@@ -880,8 +880,8 @@ a:hover, a:active {
 }
 
 .current-edition {
-	background: url('./img/bkg1.jpg') no-repeat center;
-	padding: 60px 0;
+	background: #190606 url('./img/bkg1.jpg') no-repeat top center;
+	padding: 80px 0;
 }
 
 .current-edition .card {
@@ -900,20 +900,21 @@ a:hover, a:active {
 	border-top: 1px solid #D8CDB5;
 }
 
-.current-edition h2 {
+.current-edition .card h2 {
 	font-size: 52px;
 	letter-spacing: -1px;
 	font-weight: bold;
 }
 
-.current-edition h3 {
+.current-edition .card h3 {
 	font-size: 30px;
 	color: #ACA4A3;
 	margin-bottom: 20px;
 }
 
-.current-edition p {
+.current-edition .card p {
 	font-size: 15px;
+	line-height: 1.8em;
 }
 
 .current-edition .btn {
@@ -944,6 +945,68 @@ a:hover, a:active {
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
 	background: #E8E0CF;
 	color: #796C6B;
+}
+
+.no-spectators {
+	padding: 260px 0 40px;
+	color: #D6C4A1;
+}
+
+.no-spectators h2 {
+	font-family: 'Amatic SC', 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 60px;
+	font-weight: normal;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.no-spectators .lead {
+	font-size: 18px;
+	line-height: 2em;
+}
+
+.no-spectators h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.no-spectators p {
+	color: #D6C4A1;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.8em;
+}
+
+.site-footer {
+	background-color: #180707;
+	padding-top: 20px;
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 14px;
+}
+
+.site-footer a {
+	color: rgba(255, 255, 255, 0.4);
+	text-decoration: underline;
+}
+
+.site-footer .container {
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 40px 20px;
+}
+
+.site-footer .footer-logo {
+	background: url('./img/footer_logo.png') no-repeat top center;
+	background-size: 136px 88px;
+	height: 88px;
+}
+
+.site-footer .social {
+	text-align: right;
+}
+
+.site-footer .social a {
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
