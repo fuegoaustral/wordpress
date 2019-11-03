@@ -13,6 +13,7 @@
 # Clearings
 # Widgets
 # Content
+	## Header and brand
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -449,7 +450,7 @@ html {
 
 body {
 	background: #fff;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -616,17 +617,10 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
-
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
+	margin: 44px 0 0;
 	padding-left: 0;
 }
 
@@ -661,11 +655,16 @@ a:hover, a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: white;
+	padding: 10px;
 }
 
 /* Small menu. */
@@ -815,6 +814,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header and brand
+--------------------------------------------------------------*/
+.site-header {
+	background: url('./img/hero.jpg') no-repeat top center;
+	height: 180px;
+}
+
+.brand {
+	background: url('./img/logo.png') no-repeat;
+	background-size: 140px auto;
+	text-indent: -800px; /* TODO: find a better image replacement method */
+	height: 85px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
