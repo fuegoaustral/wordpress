@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans:400,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans:300,400,600&display=swap" rel="stylesheet">
 	<link href="+SC|Open+Sans&display=swap" rel="stylesheet">
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon4.png" type="image/png">
 
@@ -16,7 +16,7 @@
 <div id="page">
 	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fuegoaustral' ); ?></a> -->
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header <?php if ( is_front_page() ) : echo "hero"; endif; ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-3 site-branding">
