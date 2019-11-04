@@ -13,7 +13,7 @@
 <div class="principles">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-8">
+			<div class="col-10">
 				<h2>10 Principios</h2>
 
 				<p>Fuego Austral es el evento regional de  Burning Man en América Latina y como tal, está inspirado en los mismos 10 principios. Para nosotros son una fuente de inspiración y definen cómo nos organizamos y participamos de este experimento de co-creación.</p>
@@ -84,8 +84,8 @@
 				</div>
 			</div>
 			<div class="card-body card-actions">
-				<a class="btn btn-primary" href="#">Comprar entradas</a>
-				<a class="btn btn-default ml-2" href="#">Más información</a>
+				<a class="btn btn-primary" href="/bono-contribucion/">Comprar entradas</a>
+				<a class="btn btn-default ml-2" href="/el-evento/">Más información</a>
 			</div>
 		</div>
 	</div>
@@ -97,15 +97,15 @@
 
 		<div class="row pt-5">
 			<div class="col">
-				<h3>Voluntaries</h3>
+				<h3><a href="/participar/voluntarios/">Voluntarios</a></h3>
 				<p>Por eso, si querés formar parte y ayudar en esta gran tarea pero no sabes cómo, a continuación podés ver las distintas áreas de voluntariado y ver con cuál sentís que podes dar tu mejor vos de acuerdo con tus habilidades, intereses y honesta disponibilidad.</p>
 			</div>
 			<div class="col">
-				<h3>Campamentos</h3>
+				<h3><a href="/participar/campamentos/">Campamentos</a></h3>
 				<p>Por eso, si querés formar parte y ayudar en esta gran tarea pero no sabes cómo, a continuación podés ver las distintas áreas de voluntariado y ver con cuál sentís que podes dar tu mejor vos de acuerdo con tus habilidades, intereses y honesta disponibilidad.</p>
 			</div>
 			<div class="col">
-				<h3>Arte</h3>
+				<h3><a href="/participar/arte/">Arte</a></h3>
 				<p>Por eso, si querés formar parte y ayudar en esta gran tarea pero no sabes cómo, a continuación podés ver las distintas áreas de voluntariado y ver con cuál sentís que podes dar tu mejor vos de acuerdo con tus habilidades, intereses y honesta disponibilidad.</p>
 			</div>
 		</div>

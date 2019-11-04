@@ -25,16 +25,19 @@
 					</a>
 				</div><!-- .site-branding -->
 
-				<nav class="col-9 main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'fuegoaustral' ); ?></button>
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					) );
-					?>
-				</nav><!-- #site-navigation -->
-
+				<div class="col">
+					<nav id="site-navigation" class="main-navigation">
+						<button class="menu-toggle btn" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+						?>
+					</nav><!-- #site-navigation -->
+				</div>
 			</div>
 		</div>
 	</header><!-- #masthead -->

@@ -628,15 +628,45 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.menu-toggle {
+	margin-top: 30px;
+	float: right;
+	border: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.main-navigation.toggled ul {
+	margin-top: 10px;
+	background: #e2d8c5;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-navigation.toggled li {
+	border-radius: 0;
+	display: block;
+	width: 100%;
+	text-shadow: none;
+}
+
+.main-navigation.toggled a {
+	color: #503C3A;
+}
+
+.main-navigation .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 44px 0 0;
+	margin: 50px 0 0;
 	padding-left: 0;
 	float: right;
 }
 
 .main-navigation ul ul {
+	margin-top: 0;
+	border-radius: 4px;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -657,6 +687,30 @@ a:hover, a:active {
 
 .main-navigation ul ul a {
 	width: 200px;
+	color: #736868;
+	text-shadow: none;
+}
+
+.main-navigation ul ul li {
+	background: white;
+	border-radius: 0;
+}
+
+.main-navigation ul ul li.current_page_item {
+	background: white;
+}
+
+.main-navigation ul ul li:first-child {
+	border-radius: 4px 4px 0 0;
+}
+
+.main-navigation ul ul li:last-child {
+	border-radius: 0 0 4px 4px;
+}
+
+.main-navigation ul ul li:hover {
+	background-color: #f7f5f0;
+    color: #4e4343;
 }
 
 .main-navigation ul li:hover > ul,
@@ -678,7 +732,7 @@ a:hover, a:active {
 	display: block;
 	text-decoration: none;
 	color: white;
-	padding: 10px 15px;
+	padding: 8px 18px;
 }
 
 .main-navigation .current_page_item {
@@ -835,6 +889,12 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header and brand
 --------------------------------------------------------------*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
 .site-header {
 	background: url('./img/hero.jpg') no-repeat top center;
 	height: 140px;
@@ -911,6 +971,7 @@ a:hover, a:active {
 .current-edition .card-actions {
 	background-color: #F9F4E9;
 	border-top: 1px solid #D8CDB5;
+	padding: 30px 40px;
 }
 
 .current-edition .card h2 {
@@ -980,8 +1041,13 @@ a:hover, a:active {
 }
 
 .no-spectators h3 {
+	font-weight: 300;
 	font-size: 30px;
 	margin-bottom: 20px;
+}
+
+.no-spectators h3 a {
+	color: #D6C4A1;
 }
 
 .no-spectators p {
@@ -1039,8 +1105,12 @@ a:hover, a:active {
 	line-height: 1.8em;
 }
 
-.site-main h3 {
+.site-main h2, .site-main h3, .site-main h4 {
+	font-weight: 300;
 	margin-bottom: 20px;
+}
+
+.site-main h3 {
 	display: inline-block;
 }
 
@@ -1059,6 +1129,30 @@ a:hover, a:active {
 	box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
 }
 
+.site-main ul {
+	margin: 0 0 30px 0;
+}
+
+.site-main ol {
+	margin: 0;
+}
+
+.site-main li {
+	font-weight: 300;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+.site-main h1 {
+	text-align: center;
+	font-family: 'Amatic SC', 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 60px;
+}
+
+.site-main h2, .site-main h3, .site-main h4 {
+	clear: none;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1073,12 +1167,6 @@ a:hover, a:active {
 
 .updated:not(.published) {
 	display: none;
-}
-
-.entry-title {
-	text-align: center;
-	font-family: 'Amatic SC', 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 60px;
 }
 
 .page-content,
@@ -1212,4 +1300,31 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## Table of contents
+--------------------------------------------------------------*/
+
+.wp-block-advanced-gutenberg-blocks-summary {
+	background-color: #f1eadd;
+	margin-left: 20px;
+	float: right;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary ol ol {
+	margin-left: 0;
+	padding-left: 15px;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary li {
+	list-style: none;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary a {
+	text-decoration: none;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary__list {
+	padding: 0;
 }
