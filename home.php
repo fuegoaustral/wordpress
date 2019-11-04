@@ -44,11 +44,46 @@
 			<div class="col-10">
 				<div class="card">
 					<div class="card-body">
-						<h2>Sincronismo</h2>
-						<h3>1 al 5 de marzo de 2019</h3>
-						<p>Fuego Austral nos convoca una vez más. Nuestra ciudad, esa a la que siempre pertenecimos, esa que elegimos, vuelve a levantarse desde la tierra para abrazarnos en su espiral. En vísperas de carnaval coincidimos en un encuentro de almas que fluyen al ritmo de su propio latido.</p>
-
-						<p>El sincronismo de ser nuestra ciudad áurea nos hermana en un nautilus de vibraciones en el que nos damos la oportunidad de ser nuestra versión más elevada. No importa por qué venimos ni de dónde. Cada uno de los pasos que dimos en el universo y nos trajeron al encuentro se transforman ahora en el ritmo de nuestro espiral, donde sincronizados en la eterna inmediatez de Fuego Austral, estamos finalmente juntos otra vez. Bienvenidos a casa.</p>
+						<div class="row">
+							<div class="col-7">
+								<h2>Satori</h2>
+								<h3>21 al 26 de febrero de 2020</h3>
+								<p>
+									Hogar... dulce y alucinante hogar.
+									<br>
+									Volver a ese lugar que se descubre de forma clara
+									<br>
+									que solo existe el presente,
+									<br>
+									allí donde nace el pasado y el futuro nos complace,
+									<br>
+									creándose y disolviéndose en el mismo instante.
+								</p>
+								<p>
+									Ese Satori en donde la experiencia ilumina tu presente
+									<br>
+									y el tiempo es sólo tardanza de lo que está por venir
+									<br>
+									que el pasado es un invento y el futuro una alucinación.
+								</p>
+								<p>
+									En donde el fuego está eufórico por calmar la razón,
+									<br>
+									mientras la pampa es un destello
+									<br>
+									repentino de movimientos constantes,
+									<br>
+									con movimientos creativos, que suceden,
+									<br>
+									en esa casa que existe
+									<br>
+									gracias a cada uno de sus mágicos y amorosos habitantes.
+								</p>
+							</div>
+							<div class="col-5">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/satori.png" alt="Satori: Fuego Austral 2020" width="100%">
+							</div>
+						</div>
 					</div>
 					<div class="card-body card-actions">
 						<a class="btn btn-primary" href="#">Comprar entradas</a>

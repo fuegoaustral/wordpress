@@ -20,7 +20,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-3 site-branding">
-					<h1 class="brand"><?php bloginfo( 'name' ); ?></h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Fuego Austral" width="140">
+					</a>
 				</div><!-- .site-branding -->
 
 				<nav class="col-9 main-navigation">
