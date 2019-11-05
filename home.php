@@ -21,16 +21,46 @@
 				<p>Son enunciados no para dictar cómo deberíamos ser o actuar, sino como un reflejo de la cultura y hábitos de quienes participamos.</p>
 
 				<ul>
-					<li>Inclusión Radical</li>
-					<li>Economía del Regalo</li>
-					<li>Expresión Radical</li>
-					<li>Autosuficiencia Radical</li>
-					<li>Responsabilidad Cívica</li>
-					<li>Desmercantilización</li>
-					<li>Esfuerzo Comunal</li>
-					<li>No Dejar Rastro</li>
-					<li>Participación</li>
-					<li>Inmediatez</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/inclusion-radical.svg" alt="" width="50">
+						Inclusión Radical
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/economia-del-regalo.svg" alt="" width="50">
+						Economía del Regalo
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/expresion-radical.svg" alt="" width="50">
+						Expresión Radical
+						</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/autosuficiencia-radical.svg" alt="" width="50">
+						Autosuficiencia Radical
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/responsabilidad-civica.svg" alt="" width="50">
+						Responsabilidad Cívica
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/desmercantilizacion.svg" alt="" width="50">
+						Desmercantilización
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/esfuerzo-comunal.svg" alt="" width="50">
+						Esfuerzo Comunal
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/no-dejar-rastro.svg" alt="" width="50">
+						No Dejar Rastro
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/participacion.svg" alt="" width="50">
+						Participación
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/inmediatez.svg" alt="" width="50">
+						Inmediatez
+					</li>
 				</ul>
 			</div>
 
