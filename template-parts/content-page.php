@@ -11,42 +11,42 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 	</header><!-- .entry-header -->
-
-	<?php fuegoaustral_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
 		the_content();
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fuegoaustral' ),
+		wp_link_pages(array(
+			'before' => '<div class="page-links">' . esc_html__('Pages:', 'fuegoaustral'),
 			'after'  => '</div>',
-		) );
+		));
 		?>
 	</div><!-- .entry-content -->
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'fuegoaustral' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+	<?php
+		$pages = get_pages(array('child_of' => get_the_ID(), 'sort_column' => 'menu_order'));
+		foreach ($pages as $child) : ?>
+
+		<div class="card mb-4">
+			<div class="row no-gutters">
+				<div class="col-md-3">
+					<img src="<?php echo fuegoaustral_entry_thumbnail_url($child); ?>" class="card-img" alt="" width="232" height="232">
+				</div>
+				<div class="col-md-9">
+					<div class="card-body">
+						<h5 class="card-title">
+							<a href="<?php echo get_permalink($child); ?>">
+								<?php echo get_the_title($child); ?>
+							</a>
+						</h5>
+						<p class="card-text"><?php echo get_the_excerpt($child); ?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<?php endforeach; ?>
+
 </article><!-- #post-<?php the_ID(); ?> -->

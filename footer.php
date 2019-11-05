@@ -1,13 +1,13 @@
 	<footer class="site-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-md info">
 					Fuego Austral Asociación Civil
 					<br>
 					<a href="mailto:contacto@fuegoaustral.org">contacto@fuegoaustral.org</a>
 				</div>
-				<div class="col footer-logo"></div>
-				<div class="col social">
+				<div class="col-md footer-logo"></div>
+				<div class="col-md social">
 					<a href="https://www.facebook.com/FuegoAustral/">
 						<img src="<? echo get_template_directory_uri(); ?>/img/facebook.png" alt="Facebook" width="34" height="34">
 					</a>

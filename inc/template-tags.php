@@ -111,38 +111,14 @@ if ( ! function_exists( 'fuegoaustral_entry_footer' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'fuegoaustral_post_thumbnail' ) ) :
-	/**
-	 * Displays an optional post thumbnail.
-	 *
-	 * Wraps the post thumbnail in an anchor element on index views, or a div
-	 * element when on single views.
-	 */
-	function fuegoaustral_post_thumbnail() {
-		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
-			return;
+if ( ! function_exists( 'fuegoaustral_entry_thumbnail_url' ) ) :
+
+	function fuegoaustral_entry_thumbnail_url( $post = null ) {
+		$url = get_the_post_thumbnail_url( $post );
+		if ( ! $url ) {
+			return get_template_directory_uri() . '/img/default.jpg';
 		}
-
-		if ( is_singular() ) :
-			?>
-
-			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
-			</div><!-- .post-thumbnail -->
-
-		<?php else : ?>
-
-		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-			<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) );
-			?>
-		</a>
-
-		<?php
-		endif; // End is_singular().
+		return $url;
 	}
+
 endif;

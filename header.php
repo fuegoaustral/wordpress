@@ -19,13 +19,13 @@
 	<header id="masthead" class="site-header <?php if ( is_front_page() ) : echo "hero"; endif; ?>">
 		<div class="container">
 			<div class="row">
-				<div class="col-3 site-branding">
+				<div class="col-md-3 site-branding">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Fuego Austral" width="140">
 					</a>
 				</div><!-- .site-branding -->
 
-				<div class="col">
+				<div class="col-md main-navigation-wrap">
 					<nav id="site-navigation" class="main-navigation">
 						<button class="menu-toggle btn" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
