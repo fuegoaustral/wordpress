@@ -23,6 +23,8 @@
 	</footer>
 </div><!-- #page -->
 
+<?php get_template_part('_analytics'); ?>
+
 <?php wp_footer(); ?>
 
 </body>
