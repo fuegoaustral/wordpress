@@ -1256,6 +1256,10 @@ a:hover, a:active {
 	border-color: #C3B59F;
 }
 
+.site-main a.card {
+  text-decoration: none;
+}
+
 .site-main .card-img {
 	background: #C3B59F;
 }
@@ -1263,10 +1267,6 @@ a:hover, a:active {
 .site-main .card-title {
 	font-weight: 400;
 	font-size: 28px;
-}
-
-.site-main .card-title a {
-	text-decoration: none;
 }
 
 .site-main .card-body {

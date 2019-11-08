@@ -29,7 +29,7 @@
 		$pages = get_pages(array('child_of' => get_the_ID(), 'sort_column' => 'menu_order'));
 		foreach ($pages as $child) : ?>
 
-		<div class="card mb-4">
+		<a class="card mb-4" href="<?php echo get_permalink($child); ?>">
 			<div class="row no-gutters">
 				<div class="col-md-3">
 					<img src="<?php echo fuegoaustral_entry_thumbnail_url($child); ?>" class="card-img" alt="" width="232" height="232">
@@ -37,15 +37,13 @@
 				<div class="col-md-9">
 					<div class="card-body">
 						<h5 class="card-title">
-							<a href="<?php echo get_permalink($child); ?>">
-								<?php echo get_the_title($child); ?>
-							</a>
+							<?php echo get_the_title($child); ?>
 						</h5>
 						<p class="card-text"><?php echo get_the_excerpt($child); ?></p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</a>
 
 	<?php endforeach; ?>
 
