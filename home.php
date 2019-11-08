@@ -71,31 +71,16 @@
 			<div class="card-body">
 				<div class="row">
 					<div class="col-md-7">
-						<h2>Satori</h2>
-						<h3>21 al 26 de febrero de 2020</h3>
+						<h2><?php echo get_theme_mod( 'fuegoaustral_current_event_title' ); ?></h2>
+						<h3><?php echo get_theme_mod( 'fuegoaustral_current_event_date' ); ?></h3>
 						<p>
-							Hogar... dulce y alucinante hogar.
-							Volver a ese lugar que se descubre de forma clara,
-							que solo existe el presente,
-							allí donde nace el pasado y el futuro nos complace,
-							creándose y disolviéndose en el mismo instante.
-						</p>
-						<p>
-							Ese Satori en donde la experiencia ilumina tu presente
-							y el tiempo es sólo tardanza de lo que está por venir,
-							que el pasado es un invento y el futuro una alucinación.
-						</p>
-						<p>
-							En donde el fuego está eufórico por calmar la razón,
-							mientras la pampa es un destello
-							repentino de movimientos constantes,
-							con movimientos creativos, que suceden,
-							en esa casa que existe gracias a cada uno
-							de sus mágicos y amorosos habitantes.
+							<?php echo str_replace(
+								"\n\n", '</p><p>',
+								get_theme_mod( 'fuegoaustral_current_event_description' ) ); ?>
 						</p>
 					</div>
 					<div class="col-md-5 d-none d-md-block">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/satori.png" alt="Satori: Fuego Austral 2020" width="100%">
+						<img src="<?php echo wp_get_attachment_image_src( get_theme_mod( 'fuegoaustral_current_event_image' ), 'full' )[0]; ?>" alt="" width="100%">
 					</div>
 				</div>
 			</div>

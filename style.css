@@ -736,7 +736,7 @@ a:hover, a:active {
 	padding: 8px 18px;
 }
 
-.main-navigation .current_page_item {
+.main-navigation .current_page_item, .current-page-ancestor {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -951,7 +951,7 @@ a:hover, a:active {
 
 .principles h2 {
 	font-family: 'Amatic SC', 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 60px;
+	font-size: 62px;
 	text-align: center;
 	margin: 20px 0 40px;
 }
@@ -1108,7 +1108,7 @@ a:hover, a:active {
 
 .no-spectators h2 {
 	font-family: 'Amatic SC', 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 60px;
+	font-size: 62px;
 	font-weight: normal;
 	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 	text-align: center;
@@ -1426,19 +1426,31 @@ object {
 --------------------------------------------------------------*/
 
 .wp-block-advanced-gutenberg-blocks-notice {
+	border-top: 3px solid #bba3a1;
 	border-radius: 0;
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 .wp-block-advanced-gutenberg-blocks-notice__title {
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.wp-block-advanced-gutenberg-blocks-notice__content {
+	margin: 0;
 }
 
 .wp-block-advanced-gutenberg-blocks-notice.is-variation-warning {
+	border-top-color: #b38924;
+}
+
+.wp-block-advanced-gutenberg-blocks-notice.is-variation-warning.is-style-full {
+	color: #735b59;
 	background-color: #ffe4a4;
-	border: none;
-    border-top: 3px solid #b38924;
 }
 
 .wp-block-advanced-gutenberg-blocks-notice.is-variation-warning .wp-block-advanced-gutenberg-blocks-notice__title {

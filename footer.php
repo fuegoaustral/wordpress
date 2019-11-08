@@ -12,10 +12,10 @@
 						<img src="<? echo get_template_directory_uri(); ?>/img/facebook.png" alt="Facebook" width="34" height="34">
 					</a>
 					<a href="https://twitter.com/fuegoaustral" class="ml-2">
-						<img src="<? echo get_template_directory_uri(); ?>/img/twitter.png" alt="Facebook" width="34" height="34">
+						<img src="<? echo get_template_directory_uri(); ?>/img/twitter.png" alt="Twitter" width="34" height="34">
 					</a>
 					<a href="https://www.instagram.com/fuegoaustral/" class="ml-2">
-						<img src="<? echo get_template_directory_uri(); ?>/img/instagram.png" alt="Facebook" width="34" height="34">
+						<img src="<? echo get_template_directory_uri(); ?>/img/instagram.png" alt="Instagram" width="34" height="34">
 					</a>
 				</div>
 			</div>

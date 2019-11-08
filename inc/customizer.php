@@ -11,9 +11,81 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function fuegoaustral_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->remove_section( 'static_front_page' );
+	$wp_customize->remove_section( 'custom_css' );
+
+	$wp_customize->add_section( 'current_event', array(
+		'title' => 'Evento actual',
+	) );
+
+	$wp_customize->add_setting ( 'fuegoaustral_current_event_title', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'theme_supports' => '',
+		'default' => '',
+		'transport' => 'refresh',
+		'sanitize_callback' => '',
+		'sanitize_js_callback' => '',
+	) );
+
+	$wp_customize->add_setting ( 'fuegoaustral_current_event_date', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'theme_supports' => '',
+		'default' => '',
+		'transport' => 'refresh',
+		'sanitize_callback' => '',
+		'sanitize_js_callback' => '',
+	) );
+
+	$wp_customize->add_setting ( 'fuegoaustral_current_event_description', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'theme_supports' => '',
+		'default' => '',
+		'transport' => 'refresh',
+		'sanitize_callback' => '',
+		'sanitize_js_callback' => '',
+	) );
+
+	$wp_customize->add_setting ( 'fuegoaustral_current_event_image', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'theme_supports' => '',
+		'default' => '',
+		'transport' => 'refresh',
+		'sanitize_callback' => '',
+		'sanitize_js_callback' => '',
+	) );
+
+	$wp_customize->add_control( 'fuegoaustral_current_event_title', array(
+		'type' => 'text',
+		'priority' => 10, // Within the section.
+		'section' => 'current_event', // Required, core or custom.
+		'label' => __( 'Título de la edición actual' ),
+	) );
+
+	$wp_customize->add_control( 'fuegoaustral_current_event_date', array(
+		'type' => 'text',
+		'priority' => 20, // Within the section.
+		'section' => 'current_event', // Required, core or custom.
+		'label' => 'Fecha de la edición actual',
+	) );
+
+	$wp_customize->add_control( 'fuegoaustral_current_event_description', array(
+		'type' => 'textarea',
+		'priority' => 20, // Within the section.
+		'section' => 'current_event', // Required, core or custom.
+		'label' => 'Descripción de la edición actual',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'fuegoaustral_current_event_image', array(
+		'label' => 'Imagen de la edición actual',
+		'priority' => 30, // Within the section.
+		'section' => 'current_event', // Required, core or custom.
+		'flex_width' => true,
+		'flex_height' => true
+	) ) );
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
