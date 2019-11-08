@@ -456,6 +456,10 @@ html {
 	box-sizing: border-box;
 }
 
+html, body {
+	height: 100%;
+}
+
 *,
 *:before,
 *:after {
@@ -464,6 +468,8 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	/* Fallback for when there is no custom background color defined. */
 	background: #F9F4E9;
 }
@@ -889,6 +895,10 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.content {
+	flex: 1 0 auto;
+}
+
 /*--------------------------------------------------------------
 ## Header and brand
 --------------------------------------------------------------*/
@@ -1150,6 +1160,7 @@ a:hover, a:active {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
+	flex-shrink: 0;
 	background-color: #180707;
 	padding-top: 20px;
 	color: rgba(255, 255, 255, 0.4);
