@@ -25,6 +25,9 @@ Text Domain: fuegoaustral
 # Widgets
 # Content
 	## Header and brand
+	## Principles
+	## Current edition
+	## No spectators
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -387,7 +390,8 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -460,8 +464,6 @@ html {
 }
 
 body {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-weight: 300;
 	/* Fallback for when there is no custom background color defined. */
 	background: #F9F4E9;
 }
@@ -943,6 +945,9 @@ a:hover, a:active {
 	}
 }
 
+/*--------------------------------------------------------------
+## Principles
+--------------------------------------------------------------*/
 .principles {
 	background-color: black;
 	color: #F4EAD6;
@@ -998,6 +1003,9 @@ a:hover, a:active {
 	transform: scale(1.1);
 }
 
+/*--------------------------------------------------------------
+## Current edition
+--------------------------------------------------------------*/
 .current-edition {
 	background: #190606 url('./img/bkg1.jpg') no-repeat top center;
 	background-size: 1680px;
@@ -1101,6 +1109,9 @@ a:hover, a:active {
 	}
 }
 
+/*--------------------------------------------------------------
+## No spectators
+--------------------------------------------------------------*/
 .no-spectators {
 	padding: 200px 0 40px;
 	color: #D6C4A1;
@@ -1135,6 +1146,9 @@ a:hover, a:active {
 	line-height: 1.8em;
 }
 
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
 .site-footer {
 	background-color: #180707;
 	padding-top: 20px;
@@ -1254,6 +1268,10 @@ a:hover, a:active {
 .site-main .card {
 	background-color: #F2EBDB;
 	border-color: #C3B59F;
+}
+
+.site-main a.card:hover {
+  background-color: #f4eee0;
 }
 
 .site-main a.card {
