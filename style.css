@@ -1170,7 +1170,8 @@ a:hover, a:active {
 }
 
 .site-footer .footer-logo {
-	background: url('./img/footer_logo.png') no-repeat top center;
+	background: url('./img/logo.svg') no-repeat top center;
+	opacity: 0.3;
 	background-size: 136px 88px;
 	height: 88px;
 }

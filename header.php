@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-md-3 site-branding">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Fuego Austral" width="140">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Fuego Austral" width="140">
 					</a>
 				</div><!-- .site-branding -->
 
