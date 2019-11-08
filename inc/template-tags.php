@@ -114,7 +114,7 @@ endif;
 if ( ! function_exists( 'fuegoaustral_entry_thumbnail_url' ) ) :
 
 	function fuegoaustral_entry_thumbnail_url( $post = null ) {
-		$url = get_the_post_thumbnail_url( $post );
+		$url = get_the_post_thumbnail_url( $post, 'thumbnail' );
 		if ( ! $url ) {
 			return get_template_directory_uri() . '/img/default.jpg';
 		}
