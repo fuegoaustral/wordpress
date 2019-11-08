@@ -16,13 +16,11 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title">No encontramos esa página.</h1>
+					<h1 class="page-title">Ups! No encontramos esa página.</h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'fuegoaustral' ); ?></p>
-
-					<?php get_search_form(); ?>
+					<p class="lead">Es probable que se haya perdido en el medio de la pampa.</p>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
