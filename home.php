@@ -99,15 +99,15 @@
 		<div class="row pt-5">
 			<div class="col-md">
 				<h3><a href="/participar/voluntarios/">Voluntarios</a></h3>
-				<p>Por eso, si querés formar parte y ayudar en esta gran tarea pero no sabes cómo, a continuación podés ver las distintas áreas de voluntariado y ver con cuál sentís que podes dar tu mejor vos de acuerdo con tus habilidades, intereses y honesta disponibilidad.</p>
+				<p><?php echo get_the_excerpt( 8 ); ?></p>
 			</div>
 			<div class="col-md">
 				<h3><a href="/participar/campamentos/">Campamentos</a></h3>
-				<p>Por eso, si querés formar parte y ayudar en esta gran tarea pero no sabes cómo, a continuación podés ver las distintas áreas de voluntariado y ver con cuál sentís que podes dar tu mejor vos de acuerdo con tus habilidades, intereses y honesta disponibilidad.</p>
+				<p><?php echo get_the_excerpt( 41 ); ?></p>
 			</div>
 			<div class="col-md">
 				<h3><a href="/participar/arte/">Arte</a></h3>
-				<p>Por eso, si querés formar parte y ayudar en esta gran tarea pero no sabes cómo, a continuación podés ver las distintas áreas de voluntariado y ver con cuál sentís que podes dar tu mejor vos de acuerdo con tus habilidades, intereses y honesta disponibilidad.</p>
+				<p><?php echo get_the_excerpt( 43 ); ?></p>
 			</div>
 		</div>
 	</div>
