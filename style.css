@@ -736,7 +736,7 @@ a:hover, a:active {
 	padding: 8px 18px;
 }
 
-.main-navigation .current_page_item, .current-page-ancestor {
+.main-navigation .current_page_item, .main-navigation .current-page-ancestor {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
