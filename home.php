@@ -66,11 +66,11 @@
 </div>
 
 <div class="current-edition">
-	<div class="container">
+	<div class="container pt-sm-5 pt-md-0">
 		<div class="card">
 			<div class="card-body">
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-lg-7">
 						<h2><?php echo get_theme_mod( 'fuegoaustral_current_event_title' ); ?></h2>
 						<h3><?php echo get_theme_mod( 'fuegoaustral_current_event_date' ); ?></h3>
 						<p>
@@ -79,7 +79,7 @@
 								get_theme_mod( 'fuegoaustral_current_event_description' ) ); ?>
 						</p>
 					</div>
-					<div class="col-md-5 d-none d-md-block">
+					<div class="col-md-5 d-none d-lg-block">
 						<img src="<?php echo wp_get_attachment_image_src( get_theme_mod( 'fuegoaustral_current_event_image' ), 'full' )[0]; ?>" alt="" width="100%">
 					</div>
 				</div>

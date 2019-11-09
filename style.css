@@ -1027,9 +1027,21 @@ a:hover, a:active {
 	padding: 80px 0 0;
 }
 
+@media screen and (max-width:1440px) {
+	.current-edition {
+		background-size: 1440px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.current-edition {
+		background-size: 1280px;
+	}
+}
+
 @media screen and (max-width:767px) {
 	.current-edition {
-		background-size: 767px;
+		background-size: 1000px;
 	}
 }
 
