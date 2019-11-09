@@ -10,15 +10,15 @@
 	</div>
 </div>
 
-<div class="principles">
+<div class="principles py-md-3">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-10">
+			<div class="col-lg-10">
 				<h2><a href="/el-evento/10-principios/">10 Principios</a></h2>
 
 				<p>Fuego Austral es el evento regional de  Burning Man en América Latina y como tal, está inspirado en los mismos 10 principios. Para nosotros son una fuente de inspiración y definen cómo nos organizamos y participamos de este experimento de co-creación. Son enunciados no para dictar cómo deberíamos ser o actuar, sino como un reflejo de la cultura y hábitos de quienes participamos.</p>
 
-				<ul>
+				<ul class="mb-4">
 					<li>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/principles/inclusion-radical.svg" alt="" width="50">
 						Inclusión Radical
@@ -85,18 +85,18 @@
 				</div>
 			</div>
 			<div class="card-body card-actions">
-				<a class="btn btn-primary" href="/bono-contribucion/">Comprar entradas</a>
-				<a class="btn btn-default ml-2" href="/el-evento/">Más información</a>
+				<a class="btn btn-primary d-block d-sm-inline-block" href="/bono-contribucion/">Comprar entradas</a>
+				<a class="btn btn-default d-block d-sm-inline-block mt-2 mt-sm-0 ml-sm-2" href="/el-evento/">Más información</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="container no-spectators">
-		<h2>Espectadores, ¡no!</h2>
+	<div class="container no-spectators pb-3 pt-5">
+		<h2 class="mt-md-5 pt-md-5">Espectadores, ¡no!</h2>
 
 		<p class="lead">A Fuego Austral lo construímos entre todos, todo lo que sucede en Fuego Austral está hecho por gente como vos, por nosotros, desde el proceso de creación hasta el armado de infraestructuras, campamentos, obras de arte y luego el desarmado de la ciudad para que todo quede como si no hubiésemos estado ahí (no dejar rastro). Todos podemos ser voluntarios y cuantos más seamos mejor va a ser nuestra ciudad temporal.</p>
 
-		<div class="row pt-5">
+		<div class="row pt-md-5">
 			<div class="col-md">
 				<h3><a href="/participar/voluntarios/">Voluntarios</a></h3>
 				<p><?php echo get_the_excerpt( 8 ); ?></p>

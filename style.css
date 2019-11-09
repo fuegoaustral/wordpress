@@ -961,7 +961,6 @@ a:hover, a:active {
 .principles {
 	background-color: black;
 	color: #F4EAD6;
-	padding: 40px 0;
 }
 
 .principles h2 {
@@ -987,7 +986,7 @@ a:hover, a:active {
 .principles ul {
 	list-style: none;
 	margin: 0;
-	padding: 20px 0 0 0;
+	padding: 0;
 }
 
 @media screen and (min-width:768px) {
@@ -1123,7 +1122,6 @@ a:hover, a:active {
 ## No spectators
 --------------------------------------------------------------*/
 .no-spectators {
-	padding: 200px 0 40px;
 	color: #D6C4A1;
 }
 
@@ -1137,8 +1135,8 @@ a:hover, a:active {
 }
 
 .no-spectators .lead {
-	font-size: 18px;
-	line-height: 2em;
+	font-size: 1.25rem;
+	line-height: 1.8em;
 }
 
 .no-spectators h3 {
