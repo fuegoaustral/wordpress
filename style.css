@@ -1140,6 +1140,14 @@ a:hover, a:active {
 	margin-bottom: 40px;
 }
 
+.no-spectators h2 a {
+	text-decoration: none;
+}
+
+.no-spectators a {
+	color: #D6C4A1;
+}
+
 .no-spectators .lead {
 	font-size: 1.25rem;
 	line-height: 1.8em;
@@ -1148,10 +1156,6 @@ a:hover, a:active {
 .no-spectators h3 {
 	font-size: 30px;
 	margin-bottom: 20px;
-}
-
-.no-spectators h3 a {
-	color: #D6C4A1;
 }
 
 .no-spectators p {

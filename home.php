@@ -92,7 +92,7 @@
 	</div>
 
 	<div class="container no-spectators pb-3 pt-5">
-		<h2 class="mt-md-5 pt-md-5">Espectadores, ¡no!</h2>
+		<h2 class="mt-md-5 pt-md-5"><a href="/participar/">Espectadores, ¡no!</a></h2>
 
 		<p class="lead">A Fuego Austral lo construímos entre todos, todo lo que sucede en Fuego Austral está hecho por gente como vos, por nosotros, desde el proceso de creación hasta el armado de infraestructuras, campamentos, obras de arte y luego el desarmado de la ciudad para que todo quede como si no hubiésemos estado ahí (no dejar rastro). Todos podemos ser voluntarios y cuantos más seamos mejor va a ser nuestra ciudad temporal.</p>
 
