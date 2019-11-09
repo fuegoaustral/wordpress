@@ -644,10 +644,11 @@ a:hover, a:active {
 }
 
 .main-navigation.toggled ul {
-	margin-top: 20px;
-	background: #e2d8c5;
+	margin-top: 10px;
+	background-color: #F2EBDB;
 	border-radius: 4px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	border: 1px solid  #C3B59F;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-navigation.toggled li {
@@ -655,6 +656,11 @@ a:hover, a:active {
 	display: block;
 	width: 100%;
 	text-shadow: none;
+	border-bottom: 1px solid #C3B59F;
+}
+
+.main-navigation.toggled li:last-child {
+	border-bottom: none;
 }
 
 .main-navigation.toggled a {
@@ -1295,10 +1301,6 @@ a:hover, a:active {
 .site-main .card-title {
 	font-weight: 400;
 	font-size: 28px;
-}
-
-.site-main .card-body {
-	padding: 30px;
 }
 
 .site-main .card-text {

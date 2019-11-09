@@ -31,11 +31,11 @@
 
 		<a class="card mb-4" href="<?php echo get_permalink($child); ?>">
 			<div class="row no-gutters">
-				<div class="col-md-3">
+				<div class="col-md-4 col-lg-3">
 					<img src="<?php echo fuegoaustral_entry_thumbnail_url($child); ?>" class="card-img" alt="" width="232" height="232">
 				</div>
-				<div class="col-md-9">
-					<div class="card-body">
+				<div class="col-md-8 col-lg-9">
+					<div class="card-body p-lg-5">
 						<h5 class="card-title">
 							<?php echo get_the_title($child); ?>
 						</h5>
