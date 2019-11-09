@@ -85,8 +85,8 @@
 				</div>
 			</div>
 			<div class="card-body card-actions">
-				<a class="btn btn-primary d-block d-sm-inline-block" href="/bono-contribucion/">Comprar entradas</a>
-				<a class="btn btn-default d-block d-sm-inline-block mt-2 mt-sm-0 ml-sm-2" href="/el-evento/">Más información</a>
+				<a class="btn btn-primary d-block d-md-inline-block" href="/bono-contribucion/">Comprar Bono Contribución de Ingreso</a>
+				<a class="btn btn-default d-block d-md-inline-block mt-2 mt-md-0 ml-md-2" href="/el-evento/">Más información</a>
 			</div>
 		</div>
 	</div>
