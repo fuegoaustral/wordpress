@@ -68,6 +68,9 @@
 <div class="current-edition">
 	<div class="container pt-sm-5 pt-md-0">
 		<div class="card">
+			<div class="card-header">
+				Próxima edición
+			</div>
 			<div class="card-body">
 				<div class="row">
 					<div class="col-lg-7">
