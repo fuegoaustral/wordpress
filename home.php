@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-10">
-				<p>Fuego Austral es una comunidad que se reúne con el objetivo de crear una ciudad temporal, dedicada a la comunidad, el arte, la auto-expresión radical y la auto-suficiencia radical.</p>
+				<p>Fuego Austral es una comunidad que se reúne con el objetivo de crear una ciudad temporal, dedicada a la comunidad, el arte, la expresión radical y la auto-suficiencia radical.</p>
 			</div>
 		</div>
 	</div>
