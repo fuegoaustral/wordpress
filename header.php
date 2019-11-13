@@ -13,7 +13,6 @@
 
 <body <?php body_class(); ?>>
 <div class="content">
-	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fuegoaustral' ); ?></a> -->
 
 	<header id="masthead" class="site-header <?php if ( is_front_page() ) : echo "hero"; endif; ?>">
 		<div class="container">
