@@ -39,7 +39,10 @@
 						<h5 class="card-title">
 							<?php echo get_the_title($child); ?>
 						</h5>
-						<p class="card-text"><?php echo get_the_excerpt($child); ?></p>
+						<p class="card-text">
+							<?php echo get_the_excerpt($child); ?>
+							<b>Leer&nbsp;más&nbsp;&raquo;</b>
+						</p>
 					</div>
 				</div>
 			</div>
