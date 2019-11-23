@@ -101,16 +101,19 @@
 
 		<div class="row pt-md-5">
 			<div class="col-md">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/voluntarios.jpg" alt="" class="mb-4">
 				<h3>Voluntarios</h3>
 				<p class="mb-2"><?php echo get_the_excerpt( 8 ); ?></p>
 				<p class="font-weight-bold"><a href="<?php echo get_permalink( 8 ); ?>">Leer más &raquo;</a></p>
 			</div>
 			<div class="col-md">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/campamentos.jpg" alt="" class="mb-4">
 				<h3>Campamentos</h3>
 				<p class="mb-2"><?php echo get_the_excerpt( 41 ); ?></p>
 				<p class="font-weight-bold"><a href="<?php echo get_permalink( 41 ); ?>">Leer más &raquo;</a></p>
 			</div>
 			<div class="col-md">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/arte.jpg" alt="" class="mb-4">
 				<h3>Arte</h3>
 				<p class="mb-2"><?php echo get_the_excerpt( 43 ); ?></p>
 				<p class="font-weight-bold"><a href="<?php echo get_permalink( 43 ); ?>">Leer más &raquo;</a></p>

@@ -1180,14 +1180,18 @@ a:hover, a:active {
 }
 
 .no-spectators h3 {
-	font-size: 30px;
-	margin-bottom: 20px;
+	font-size: 28px;
+	margin-bottom: 15px;
 }
 
 .no-spectators p {
 	color: #D6C4A1;
 	font-size: 15px;
 	line-height: 1.8em;
+}
+
+.no-spectators img {
+	border: 2px solid white;
 }
 
 /*--------------------------------------------------------------
